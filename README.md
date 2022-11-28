@@ -19,7 +19,7 @@ Response:
 - For successfully authenticated user - 200 OK with IFPS hash
 ```json
 {
-    "ipfsHash": "<IFPS hash>"
+    "ipfsHash": ["<IFPS hash>", ...]
 }
 ```
 
@@ -168,7 +168,7 @@ Response body:
             "name": "<name>",
             "owner": "<owner>",
             "region": "<region>",
-            "ipfs": "<ipfs_hash>",
+            "ipfs": ["<ipfs_hash>", ...]
             "updated_at": "<timestamp>"
         },
         ...
@@ -217,7 +217,7 @@ Request body:
 {
     "device_id": "<device id>",
     "api_key": "<api key>",
-    "ipfs_hash": "<IPFS hash>"
+    "ipfs_hash": ["<IPFS hash>", ...]
 }
 ```
 
